@@ -66,8 +66,8 @@ module stimulus;
 		@(posedge done);
 		
 
-		// #(cyc) nop;
-		// #(cyc*8);
+		#(cyc) nop;
+		#(cyc*8);
 		$finish;
 	end
 
